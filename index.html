@@ -53,51 +53,30 @@ POSSIBILITY OF SUCH DAMAGE.
         html, body {
           background-color: #ddd;
         }
-
-        #montage-bootstrapper {
-            display: none;
-            color: red;
-        }
-
-        .montage-bootstrapping #montage-bootstrapper {
-            display: block;
-        }
-
+        
         #montage-loader {
-            color: green;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .montage-app-bootstrapping .main,
+        .montage-app-loading .main,
+        .montage-app-loaded #montage-loader {
             display: none;
         }
-
-        .montage-Loading #montage-loader {
+        
+        .montage-app-bootstrapping #montage-loader,
+        .montage-app-loading #montage-loader {
             display: block;
         }
-
-        .main {
-            display: block;
-        }
-
-        .montage-loaded .main {
-            display: block;
-        }
-
     </style>
 
 </head>
 <body>
 
-    <p>
-        <center>
-            <img src="assets/image/montage-logo.png" />
-        </center>
-    </p>
-
-    <div id="montage-bootstrapper">
-        <p>This is the bootstrapper content which will now be shown for at least 1500ms.</p>
-    </div>
     <div id="montage-loader">
-        <p>This is the loader content which will now be shown for at least 2000ms.</p>
+        <img src="assets/image/montage-logo.png" style="width: 300px;" />
     </div>
-
 
 </body>
 </html>
